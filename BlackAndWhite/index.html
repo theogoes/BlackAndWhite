@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="script.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="incon" href="img/icon.PNG">
+	<title>index</title>
+</head>
+<body>
+	<div id="container">
+		<div id="cabecalho">
+			<div id="Logo"><a href="#"><img class="logo" src="img/logo.PNG"></a></div>
+			<div id="Menu">
+				<ul>
+					<li><p class="menu"><a href="#"> Inicio</a></p></li>
+					<li><p class="menu"><a href="#">Loja</a></p></li>
+					<li><p class="menu"><a href="#">contato</a></p></li>
+				</ul>
+				<div id="Cadastro"><p class="cadastrar"><a href="#"> Login</a></p></div>
+				<div id="Cadastro"><p class="cadastrar"><a href="#"> Cadastrar</a></p></div>
+			</div>
+		</div>
+		<div id="corpo">
+			<div id="destaque">	
+			
+										
+										<!-- Slideshow container -->
+					<div class="slideshow-container">
+
+					  <div class="mySlides fade">
+						
+					  	<div id="img">
+						    <img src="img/gato.jpg" class="gato"> 
+						</div>
+
+
+						<div id="text">
+							<a href="#">
+							<div id="textarea">
+
+							  <p class="titleD"> Black &<br> White</p><br>
+							<p class="txtD">"A melhor e maior loja de móveis preto e branco do Brasil. Sinta e possua nossos móveis destaques de feiras nacionais e internacionais"</p>
+					    	</div>
+					    </a>
+					 	 </div>
+					 	 	
+							  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+
+					  <div class="mySlides fade">
+					  	<div id="img">
+						    <img src="img/ambient.jpg" class="ambiente">
+						</div>
+						<div id="text">
+							<a href="#">
+							  <p class="titleD"> Style &<br>Ambient</p>
+							<p class="txtD">"Permita-nos transformar o seu comodo no ambiente dos seus sonhos, com a ultima moda de Design e Arte"</p>
+					    	</a>
+					 	 </div>
+							  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+						<div class="mySlides fade">
+					  	<div id="img">
+						    <img src="img/chair5.jpg" class="ambiente">
+						</div>
+						<div id="text">
+							<a href="#">
+							  <p class="titleD"> Love &<br>Confort</p>
+							<p class="txtD">"Tenha encontros e jantares romaticos com o estilo e conforto que apensa nossos móveis podem garantir."</p>
+					    	</a>
+					 	 </div>
+							  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+						</div>
+					  </div>
+					<script>
+						var slideIndex = 1;
+						showSlides(slideIndex);
+
+						function plusSlides(n) {
+						  showSlides(slideIndex += n);
+						}
+
+						function currentSlide(n) {
+						  showSlides(slideIndex = n);
+						}
+
+						function showSlides(n) {
+						  var i;
+						  var slides = document.getElementsByClassName("mySlides");
+						  var dots = document.getElementsByClassName("dot");
+						  if (n > slides.length) {slideIndex = 1}    
+						  if (n < 1) {slideIndex = slides.length}
+						  for (i = 0; i < slides.length; i++) {
+						      slides[i].style.display = "none";  
+						  }
+						  for (i = 0; i < dots.length; i++) {
+						      dots[i].className = dots[i].className.replace(" active", "");
+						  }
+						  slides[slideIndex-1].style.display = "flex";  
+						  dots[slideIndex-1].className += " active";
+						}
+						</script>
+			<div id="promocoes">
+
+				<div id="grid">
+					<div id="i1"><p class="um"><a href="#"> Promoções</a></p><p class="txtp">" Para você aproveitar<br>Tudo que puder "</p></div>
+					<div id="i2"><p class="dois"><a href="#">40%</a></p><p class="txtp"> "Nas nossas melhores lampadas"</p></div>
+					<div id="i3"><p class="dois"><a href="#"> 30%</a></p><p class="txtp"> "Na montagem do seu Ambiente <br>perfeito"</p></div>
+					<div id="i4"><p class="dois"><a href="#"> 20%</a></p><p class="txtp"> "Na sua primeira compra"</p></div>
+				</div>
+				<div class="ajusta"></div>
+
+			</div>
+			<div id="explore">
+				<div id="txtAreaC">
+					<p class="ex"> Contato</p>
+					<div id="txtC">
+						<p class="txtc">Entre em contato conosco através das principais midias socais. Se preferir, pode nos ligar através do numero de WahtsApp. <br><br>"Agende sua consulta de ambiente, compre seus moveis, realize-se com a agilidade da nossa equipe de Contato. Aguardamos seu contato."</p>
+						<p class="txtc2"><br><br>Faça contato profissional através da aba contato no menu superior e faça sua parceria conosco. Oferecemos descontos exclusivos e um sistema de fidelidade para garantir a sua felicidade e de seus clientes.</p>
+							
+					</div>
+				</div>
+				<div id="imgArea">
+					 <div class="grid">	
+					 	<div id="a1"><a href="#"><img class="media" src="img/face.png"></a></div>
+					 	<div id="a2"><a href="#"><p class="contato">/BlackAndWhite</a></p></div>
+					 	<div id="a3"><a href="#"><img class="ins" src="img/ins.png"></a></div>
+					 	<div id="a4"><a href="#"><p class="contato">/BlackAndWhiteBR</a></p></div>
+					 	<div id="a5"><a href="#"><img class="wahts" src="img/wahts.png"></a></div>
+					 	<div id="a6"><a href="#"><p class="contato">55 51 999324508</a></p></div>
+					 </div>
+				</div>
+			</div>
+		</div>
+		<div id="rodape">
+			<div id="mapa">
+				<div id="m">
+					<ul>
+						<li><p class="mapa"><a href="#"> Inicio</a></p></li>
+						<li><p class="mapa"><a href="#"> Loja</a></p></li>
+						<li><p class="mapa"><a href=""> Contato</a></p></li>
+					</ul>
+					
+				</div>
+				<div id="m">
+					<ul>
+						<li><p class="mapa"><a href=""> Abajur</a></p></li>
+						<li><p class="mapa"><a href=""> Ambientes</a></p></li>
+						<li><p class="mapa"><a href=""> Cadeiras</a></p></li>
+					</ul>
+				</div>
+				<div id="m">
+					<ul>
+						<li><p class="mapa"><a href="#"> login</a></p></li>
+						<li><p class="mapa"><a href="#"> cadastrar</a></p></li>
+						<li><p class="mapa"><a href="#"> promoções</a></li>
+					</ul>
+				</div>
+
+				
+			</div>
+			<div id="direitos">	
+				<br>
+				<p class="reservados">Todos direitos reservados 2019 @BlackAndWithe Society | Rua Venancio aires, Centro, N°1879 - Santa Cruz do Sul - RS </p>
+			</div>
+		</div>
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>
